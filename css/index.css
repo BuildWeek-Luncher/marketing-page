@@ -136,3 +136,29 @@ html,
 body {
   font-family: 'Roboto', sans-serif;
 }
+.navigation {
+  width: 100%;
+  font-size: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
+}
+nav a {
+  display: block;
+  text-align: center;
+  width: 100%;
+  text-decoration: none;
+  color: #636E72;
+}
+nav a:hover {
+  color: #FFAD72;
+}
+.navlogo {
+  height: 200px;
+  margin-left: 2%;
+}
