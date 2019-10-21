@@ -2,9 +2,47 @@ footer{
     background-color: @orange;
     opacity: .7;
     padding: 2% 0%;
+    display: flex;
+    justify-content: space-evenly;
 }
 
+.footersection2{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.footersection3{
+    width: 55%;
+    font-size: 4rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#footernav a{
+        display: block;
+        text-align: center;
+        width: 100%;
+        text-decoration: none;
+        color: @gray;
+        padding: 20px;
+    
+        &:hover{
+            color: @blue;
+          }
+    
+    }
+
 .footertext{
-    width: 15%;
+    width: 30%;
     padding-left: 1%;
+}
+
+.iconbox{
+    display: flex;
+    justify-content: space-evenly !important;
+    width: 40% !important;
+    margin-top: .6%;
+    margin-left: 29% !important;
 }

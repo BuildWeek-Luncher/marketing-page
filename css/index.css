@@ -141,6 +141,10 @@ p {
   line-height: 1.4;
   margin: 1%;
 }
+i {
+  color: #636E72;
+  width: 110%;
+}
 .navigation {
   width: 100%;
   font-size: 3rem;
@@ -201,10 +205,42 @@ footer {
   background-color: #FFAD72;
   opacity: 0.7;
   padding: 2% 0%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footersection2 {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.footersection3 {
+  width: 55%;
+  font-size: 4rem;
+  display: flex;
+  justify-content: flex-end;
+}
+#footernav a {
+  display: block;
+  text-align: center;
+  width: 100%;
+  text-decoration: none;
+  color: #636E72;
+  padding: 20px;
+}
+#footernav a:hover {
+  color: #74B9FF;
 }
 .footertext {
-  width: 15%;
+  width: 30%;
   padding-left: 1%;
+}
+.iconbox {
+  display: flex;
+  justify-content: space-evenly !important;
+  width: 40% !important;
+  margin-top: 0.6%;
+  margin-left: 29% !important;
 }
 .summary {
   display: flex;
@@ -227,6 +263,7 @@ section {
 .contentblock {
   display: flex;
   width: 90%;
+  border-bottom: 1px solid #636E72;
 }
 .textblock {
   margin-top: 15%;
@@ -243,6 +280,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  margin-bottom: 0.5%;
 }
 .cta2img {
   width: 50%;
