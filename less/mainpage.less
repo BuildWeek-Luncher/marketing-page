@@ -1,6 +1,6 @@
 .visionsection{
     background-color: rgb(207, 228, 248);
-    width: 90%;
+    width: 75%;
     margin-left: 25%;
 
     @media @phone{
@@ -8,6 +8,11 @@
     }
 
     @media @tablet{
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    @media @smaller{
         width: 100%;
         margin-left: 0%;
     }
@@ -50,11 +55,18 @@
 
     @media @phone{
         width: 100%;
+        margin-right: 3%;
     }
 
     @media @tablet{
         width: 80%;
         margin: 0 auto;
+    }
+
+    @media @smaller{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 2%;
     }
 }
 
@@ -75,9 +87,10 @@ section{
     border-bottom: 1px solid @gray;
 
     @media @phone {
-        width: 90%;
+        width: 100%;
         flex-direction: column;
         align-items: center;
+        margin-right: 3%;
     }
 
     @media @tablet{
@@ -104,6 +117,13 @@ section{
         margin-top: 5%;
         margin-left: 5%;
     }
+
+    @media @smaller {
+        text-align: center;
+        width: 100%;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
 }
 
 
@@ -125,7 +145,9 @@ section{
         width: 90%;
         flex-direction: column;
         align-items: center;
+        
     }
+
 }
 
 #reverseblock{
@@ -133,8 +155,20 @@ section{
     margin-left: 27%;
     width: 100%;
 
+    @media @phone{
+        margin-left: 50%;
+    }
+
     @media @tablet{
-        margin: 0 auto;
+        margin-right: 25%;
+        margin-left: 0%;
+    }
+
+    @media @smaller {
+        text-align: center;
+        width: 100%;
+        margin-top: 5%;
+        margin-left: 5%;
     }
 }
 
@@ -145,6 +179,8 @@ section{
     @media @phone{
         width: 80%;
     }
+
+ 
 }
 
 .CTA2{

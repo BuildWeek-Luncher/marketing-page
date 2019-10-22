@@ -129,11 +129,6 @@ table {
 * {
   box-sizing: border-box;
 }
-@media (max-width: 500px) {
-  * {
-    max-width: 100%;
-  }
-}
 html {
   font-size: 62.5%;
 }
@@ -141,6 +136,8 @@ html,
 body {
   font-family: 'Roboto', sans-serif;
   background: #e9f4ff;
+  max-width: 100%;
+  margin: 0 auto;
 }
 p {
   font-size: 1.6rem;
@@ -169,7 +166,7 @@ h3 {
 }
 @media (max-width: 500px) {
   .navigation {
-    width: 130%;
+    width: 100% !important;
     justify-content: center;
   }
 }
@@ -224,6 +221,12 @@ nav a:hover {
 .ctaimg {
   width: 100%;
 }
+@media (max-width: 500px) {
+  .ctaimg {
+    width: 83%;
+    margin-left: -18%;
+  }
+}
 .trim {
   max-height: 900px;
   overflow: hidden;
@@ -247,8 +250,15 @@ header {
     width: 121%;
   }
 }
+@media (max-width: 1366px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    width: 121%;
+  }
+}
 .headlinecta {
-  font-size: 8rem;
+  font-size: 7rem;
   position: absolute;
   width: 30%;
   color: #636E72;
@@ -266,8 +276,16 @@ header {
 }
 @media (max-width: 800px) {
   .headlinecta {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-top: 10%;
+    font-weight: bold;
+    bottom: 0%;
+  }
+}
+@media (max-width: 1366px) {
+  .headlinecta {
+    font-size: 1.4rem;
+    margin-top: 0%;
     font-weight: bold;
     bottom: 0%;
   }
@@ -275,6 +293,21 @@ header {
 h1 {
   margin-right: 5%;
   margin-top: -6%;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.4rem !important;
+  }
+}
+@media (max-width: 800px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 1366px) {
+  h1 {
+    font-size: 4rem;
+  }
 }
 button {
   width: 30%;
@@ -312,7 +345,7 @@ button:hover {
 }
 @media (max-width: 500px) {
   #luncher {
-    font-size: 1.6rem;
+    font-size: 2rem !important;
   }
 }
 @media (max-width: 800px) {
@@ -332,6 +365,11 @@ footer {
     flex-direction: column;
   }
 }
+@media (max-width: 1366px) {
+  footer {
+    padding: 0;
+  }
+}
 .footersection2 {
   width: 25%;
   display: flex;
@@ -343,6 +381,13 @@ footer {
   font-size: 4rem;
   display: flex;
   justify-content: flex-end;
+}
+@media (max-width: 1366px) {
+  .footersection3 {
+    width: 40%;
+    font-size: 1.6rem;
+    margin-right: 20%;
+  }
 }
 #footernav a {
   display: block;
@@ -360,6 +405,14 @@ footer {
 @media (max-width: 800px) {
   #footernav a {
     display: none;
+  }
+}
+@media (max-width: 1366px) {
+  #footernav a {
+    width: 98%;
+    white-space: nowrap;
+    font-size: 2.3rem;
+    margin-left: -2%;
   }
 }
 #footernav a:hover {
@@ -386,12 +439,26 @@ footer {
     white-space: nowrap;
   }
 }
+@media (max-width: 1366px) {
+  .footertext {
+    display: inline-block;
+    text-align: center;
+    margin-left: 100%;
+    white-space: nowrap;
+    margin-top: 55%;
+  }
+}
 @media (max-width: 500px) {
   #phrase {
     display: none;
   }
 }
 @media (max-width: 800px) {
+  #phrase {
+    display: none;
+  }
+}
+@media (max-width: 1366px) {
   #phrase {
     display: none;
   }
@@ -414,7 +481,7 @@ footer {
 }
 .visionsection {
   background-color: #cfe4f8;
-  width: 90%;
+  width: 75%;
   margin-left: 25%;
 }
 @media (max-width: 500px) {
@@ -423,6 +490,12 @@ footer {
   }
 }
 @media (max-width: 800px) {
+  .visionsection {
+    width: 100%;
+    margin-left: 0%;
+  }
+}
+@media (max-width: 1366px) {
   .visionsection {
     width: 100%;
     margin-left: 0%;
@@ -462,12 +535,20 @@ footer {
 @media (max-width: 500px) {
   .pblock {
     width: 100%;
+    margin-right: 3%;
   }
 }
 @media (max-width: 800px) {
   .pblock {
     width: 80%;
     margin: 0 auto;
+  }
+}
+@media (max-width: 1366px) {
+  .pblock {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2%;
   }
 }
 section {
@@ -484,9 +565,10 @@ section {
 }
 @media (max-width: 500px) {
   .contentblock {
-    width: 90%;
+    width: 100%;
     flex-direction: column;
     align-items: center;
+    margin-right: 3%;
   }
 }
 @media (max-width: 800px) {
@@ -509,6 +591,14 @@ section {
   }
 }
 @media (max-width: 800px) {
+  .textblock {
+    text-align: center;
+    width: 100%;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+}
+@media (max-width: 1366px) {
   .textblock {
     text-align: center;
     width: 100%;
@@ -542,9 +632,23 @@ section {
   margin-left: 27%;
   width: 100%;
 }
+@media (max-width: 500px) {
+  #reverseblock {
+    margin-left: 50%;
+  }
+}
 @media (max-width: 800px) {
   #reverseblock {
-    margin: 0 auto;
+    margin-right: 25%;
+    margin-left: 0%;
+  }
+}
+@media (max-width: 1366px) {
+  #reverseblock {
+    text-align: center;
+    width: 100%;
+    margin-top: 5%;
+    margin-left: 5%;
   }
 }
 #reversepblock {
