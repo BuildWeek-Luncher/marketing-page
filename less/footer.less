@@ -1,9 +1,18 @@
 footer{
-    background-color: @orange;
+    background-color: rgb(64, 70, 71);
     opacity: .7;
     padding: 2% 0%;
     display: flex;
     justify-content: space-evenly;
+
+    @media @phone{
+        flex-direction: column;
+    }
+
+    @media @smaller{
+        padding: 0;
+    }
+    
 }
 
 .footersection2{
@@ -11,6 +20,8 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+
+    
 }
 
 .footersection3{
@@ -18,6 +29,13 @@ footer{
     font-size: 4rem;
     display: flex;
     justify-content: flex-end;
+
+    @media @smaller{
+        width: 40%;
+        font-size: 1.6rem;
+        margin-right: 20%;
+    }
+
 }
 
 #footernav a{
@@ -25,8 +43,23 @@ footer{
         text-align: center;
         width: 100%;
         text-decoration: none;
-        color: @gray;
+        color: @orange;
         padding: 20px;
+
+        @media @phone{
+            display: none;
+        }
+
+        @media @tablet{
+            display: none;
+        }
+        @media @smaller{
+            width: 98%;
+            white-space: nowrap;
+            font-size: 2.3rem;
+            margin-left: -2%;
+
+        }
     
         &:hover{
             color: @blue;
@@ -37,12 +70,58 @@ footer{
 .footertext{
     width: 30%;
     padding-left: 1%;
+    color: @orange;
+
+    @media @phone{
+        display: inline-block;
+        text-align: center;
+        margin-left: 100%;
+        white-space: nowrap;
+    }
+
+    @media @tablet{
+        display: inline-block;
+        text-align: center;
+        margin-left: 100%;
+        white-space: nowrap;
+    }
+
+    @media @smaller{
+        display: inline-block;
+        text-align: center;
+        margin-left: 100%;
+        white-space: nowrap;
+        margin-top: 55%;
+    }
+
+}
+
+#phrase{
+    @media @phone{
+        display: none;
+    }
+
+    @media @tablet{
+        display: none;
+    }
+
+    @media @smaller{
+        display: none;
+    }
 }
 
 .iconbox{
     display: flex;
     justify-content: space-evenly !important;
-    width: 40% !important;
+    width: 100% !important;
     margin-top: .6%;
-    margin-left: 29% !important;
+
+    @media @phone{
+        margin-left: 7%;
+    }
+
+    @media @tablet{
+        margin-left: 30%;
+    }
+    
 }

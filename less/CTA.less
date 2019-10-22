@@ -1,21 +1,89 @@
 .ctaimg{
     width: 100%;
+
+    @media @phone{
+        width: 83%;
+        margin-left: -18%;
+    }
+}
+
+.trim{
+    max-height: 900px;
+    overflow: hidden;
 }
 
 header{
     position: relative;
     text-align: center;
     color: white;
+
+    @media @phone {
+        display: flex;
+        flex-direction: column;
+        width: 121%;
+    }
+
+    @media @tablet {
+        display: flex;
+        flex-direction: column;
+        width: 121%;
+    }
+
+    @media @smaller{
+        display: flex;
+        flex-direction: column;
+        width: 121%;
+}
 }
 
 .headlinecta{
-    font-size: 8rem;
+    font-size: 7rem;
     position: absolute;
     width: 30%;
     color: @gray;
     bottom: 50%;
     top: 15%;
     left: 8%;
+
+    @media @phone {
+        font-size: 1.4rem;
+        top: 10%;
+        font-weight: bold;
+        bottom: 0%;
+        top: 10%;
+    }
+
+    @media @tablet {
+        font-size: 1.2rem;
+        margin-top: 10%;
+        font-weight: bold;
+        bottom: 0%;
+    }
+
+    @media @smaller {
+        font-size: 1.4rem;
+        margin-top: 0%;
+        font-weight: bold;
+        bottom: 0%;
+
+}
+}
+
+h1{
+    margin-right: 5%;
+    margin-top: -6%;
+
+    @media @phone{
+        font-size: 1.4rem !important;
+    }
+
+    @media @tablet{
+        font-size: 3rem;
+    }
+
+    @media @smaller{
+        font-size: 4rem;
+    }
 }
 
 button{
@@ -31,4 +99,33 @@ button{
     &:hover{
         color: @orange;
       }
+
+    @media @phone {
+        width: 90%;
+        font-size: 1.4rem;
+        height: 50px;
+        margin-bottom: 3%;
+}
+
+@media @tablet {
+    width: 90%;
+    font-size: 1.4rem;
+    height: 50px;
+    margin-bottom: 3%;
+}
+}
+
+
+#luncher{
+    color: rgb(65, 72, 75);
+    font-size: 9rem;
+    font-weight: bold;
+
+    @media @phone {
+        font-size: 2rem !important;
+}
+    @media @tablet{
+        font-size: 3rem;
+    }
+
 }
