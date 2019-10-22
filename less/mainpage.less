@@ -2,8 +2,13 @@
     background-color: rgb(207, 228, 248);
     width: 90%;
     margin-left: 25%;
-}
 
+    @media @phone{
+        display: none;
+    }
+    }
+
+   
 .summary{
     display: flex;
     flex-direction: column;
@@ -12,15 +17,6 @@
     justify-content: center;
     align-items: center;
     margin-top: 3%;
-    
-
-    @media @phone {
-        display: flex;
-        flex-direction: column;
-        max-width: 90%;
-        margin-top: 10%;
-        margin-left: 30px;
-    }
 }   
 
 #vision{
@@ -33,17 +29,16 @@
     font-size: 3rem;
     margin-left: 19%;
     margin-top: 1.5%;
-
-    @media @phone {
-        width: 100%;
-        margin-top: 1%;
-    }
 }
 
 .pblock{
     font-size: 2rem;
     width: 40%;
     margin-left: 1%;
+
+    @media @phone{
+        width: 100%;
+    }
 }
 
 section{
@@ -111,6 +106,10 @@ section{
 #reversepblock{
     width: 80%;
     margin-top: 2%;
+
+    @media @phone{
+        width: 80%;
+    }
 }
 
 .CTA2{
@@ -132,12 +131,13 @@ section{
 
 .cta2h2{
     font-size: 7rem;
-    width: 90%;
+    width: 75%;
     margin: 1%;
     border-bottom: 2px solid @gray;
 
     @media @phone{
-        width: 50%;
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -150,7 +150,7 @@ section{
     color: @blue;
 
     @media @phone{
-        width: 90%;
+        width: 100%;
     }
    
 }
