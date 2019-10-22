@@ -1,11 +1,27 @@
 .ctaimg{
     width: 100%;
+
+    @media @phone {
+     
+    }
+}
+
+.trim{
+    max-height: 900px;
+    overflow: hidden;
 }
 
 header{
     position: relative;
     text-align: center;
     color: white;
+
+    @media @phone {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 121%;
+    }
 }
 
 .headlinecta{
@@ -16,6 +32,12 @@ header{
     bottom: 50%;
     top: 15%;
     left: 8%;
+
+    @media @phone {
+        font-size: 2rem;
+        top: 10%;
+        font-weight: bold;
+    }
 }
 
 button{
@@ -31,4 +53,12 @@ button{
     &:hover{
         color: @orange;
       }
+
+    @media @phone {
+        display: none;
+}
+}
+
+#luncher{
+    color: rgb(65, 72, 75)
 }

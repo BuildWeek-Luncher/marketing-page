@@ -142,7 +142,7 @@ p {
   margin: 1%;
 }
 i {
-  color: #636E72;
+  color: #FFAD72;
   width: 110%;
 }
 .navigation {
@@ -151,11 +151,25 @@ i {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #bcddff;
+}
+@media (max-width: 500px) {
+  .navigation {
+    width: 130%;
+    justify-content: center;
+  }
 }
 nav {
   width: 70%;
   display: flex;
   justify-content: flex-start;
+}
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 150%;
+  }
 }
 nav a {
   display: block;
@@ -171,13 +185,30 @@ nav a:hover {
   height: 200px;
   margin-left: 2%;
 }
+@media (max-width: 500px) {
+  .navlogo {
+    display: none;
+  }
+}
 .ctaimg {
   width: 100%;
+}
+.trim {
+  max-height: 900px;
+  overflow: hidden;
 }
 header {
   position: relative;
   text-align: center;
   color: white;
+}
+@media (max-width: 500px) {
+  header {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 121%;
+  }
 }
 .headlinecta {
   font-size: 8rem;
@@ -187,6 +218,13 @@ header {
   bottom: 50%;
   top: 15%;
   left: 8%;
+}
+@media (max-width: 500px) {
+  .headlinecta {
+    font-size: 2rem;
+    top: 10%;
+    font-weight: bold;
+  }
 }
 button {
   width: 30%;
@@ -201,8 +239,16 @@ button {
 button:hover {
   color: #FFAD72;
 }
+@media (max-width: 500px) {
+  button {
+    display: none;
+  }
+}
+#luncher {
+  color: #41484b;
+}
 footer {
-  background-color: #FFAD72;
+  background-color: #404647;
   opacity: 0.7;
   padding: 2% 0%;
   display: flex;
@@ -225,7 +271,7 @@ footer {
   text-align: center;
   width: 100%;
   text-decoration: none;
-  color: #636E72;
+  color: #FFAD72;
   padding: 20px;
 }
 #footernav a:hover {
@@ -234,13 +280,13 @@ footer {
 .footertext {
   width: 30%;
   padding-left: 1%;
+  color: #FFAD72;
 }
 .iconbox {
   display: flex;
   justify-content: space-evenly !important;
-  width: 40% !important;
+  width: 100% !important;
   margin-top: 0.6%;
-  margin-left: 29% !important;
 }
 .summary {
   display: flex;
@@ -250,8 +296,23 @@ footer {
   align-items: center;
   margin-top: 3%;
 }
+@media (max-width: 500px) {
+  .summary {
+    display: flex;
+    flex-direction: column;
+    max-height: 30% !important;
+    margin-top: 220px;
+    margin-left: 30px;
+  }
+}
 .summaryp {
   width: 40%;
+}
+@media (max-width: 500px) {
+  .summaryp {
+    width: 100%;
+    margin-top: 1%;
+  }
 }
 section {
   font-size: 3rem;
@@ -265,37 +326,66 @@ section {
   width: 90%;
   border-bottom: 1px solid #636E72;
 }
+@media (max-width: 500px) {
+  .contentblock {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .textblock {
   margin-top: 15%;
   width: 45%;
+}
+@media (max-width: 500px) {
+  .textblock {
+    width: 100%;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
 }
 .contentimg {
   width: 40%;
   margin: 5%;
 }
+@media (max-width: 500px) {
+  .contentimg {
+    width: 100%;
+    margin-left: 25%;
+  }
+}
 #contentreverse {
   flex-direction: row-reverse;
 }
-.CTA2 {
+@media (max-width: 500px) {
+  #contentreverse {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#contentreverse .CTA2 {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-bottom: 0.5%;
+  background-color: #2c4661;
 }
-.cta2img {
+#contentreverse .cta2img {
   width: 50%;
   margin-top: 3%;
   margin-left: 2%;
 }
-.cta2h2 {
+#contentreverse .cta2h2 {
   font-size: 7rem;
   width: 20%;
   margin: 1%;
 }
-.ctatextblock {
+#contentreverse .ctatextblock {
   width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  color: #74B9FF;
+  color: red;
 }

@@ -5,10 +5,23 @@
     justify-content: space-evenly;
     align-items: center;
     margin-top: 3%;
+
+    @media @phone {
+        display: flex;
+        flex-direction: column;
+        max-height: 30% !important;
+        margin-top: 220px;
+        margin-left: 30px;
+    }
 }   
 
 .summaryp{
     width: 40%;
+
+    @media @phone {
+        width: 100%;
+        margin-top: 1%;
+    }
 }
 
 section{
@@ -26,28 +39,51 @@ section{
     display: flex;
     width: 90%;
     border-bottom: 1px solid @gray;
+
+    @media @phone {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .textblock{
     margin-top: 15%;
     width: 45%;
+
+    @media @phone {
+        width: 100%;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
 }
 
 
 .contentimg{
     width: 40%;
     margin: 5%;
+
+    @media @phone {
+        width: 100%;
+        margin-left: 25%;
+    }
 }
 
 #contentreverse{
     flex-direction: row-reverse;
+
+    @media @phone {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    
 }
 
 .CTA2{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-bottom: .5%;
+    background-color: rgb(44, 70, 97);
 
 }
 .cta2img{
@@ -68,5 +104,10 @@ section{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    color: @blue;
+    color: red;
+    
+    
 }
 
+}

@@ -4,11 +4,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: rgb(188, 221, 255);
+
+    @media @phone {
+        width: 130%;
+        justify-content: center;
+    }
 }
 nav{
     width: 70%;
     display: flex;
     justify-content: flex-start;
+
+    @media @phone {
+        display: flex;
+        flex-direction: column;
+        width: 150%;
+    }
 }
 nav a{
     display: block;
@@ -26,4 +38,8 @@ nav a{
 .navlogo{
     height: 200px;
     margin-left: 2%;
+
+    @media @phone {
+        display: none;
+    }
 }
