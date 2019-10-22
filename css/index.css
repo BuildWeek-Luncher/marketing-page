@@ -175,7 +175,7 @@ h3 {
 }
 @media (max-width: 800px) {
   .navigation {
-    width: 1300px;
+    width: 100%;
   }
 }
 nav {
@@ -188,6 +188,13 @@ nav {
     display: flex;
     flex-direction: column;
     width: 150%;
+  }
+}
+@media (max-width: 800px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 }
 nav a {
@@ -205,6 +212,11 @@ nav a:hover {
   margin-left: 2%;
 }
 @media (max-width: 500px) {
+  .navlogo {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
   .navlogo {
     display: none;
   }
@@ -228,6 +240,13 @@ header {
     width: 121%;
   }
 }
+@media (max-width: 800px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    width: 121%;
+  }
+}
 .headlinecta {
   font-size: 8rem;
   position: absolute;
@@ -243,6 +262,14 @@ header {
     font-weight: bold;
     bottom: 0%;
     top: 10%;
+  }
+}
+@media (max-width: 800px) {
+  .headlinecta {
+    font-size: 1.4rem;
+    margin-top: 10%;
+    font-weight: bold;
+    bottom: 0%;
   }
 }
 h1 {
@@ -270,6 +297,14 @@ button:hover {
     margin-bottom: 3%;
   }
 }
+@media (max-width: 800px) {
+  button {
+    width: 90%;
+    font-size: 1.4rem;
+    height: 50px;
+    margin-bottom: 3%;
+  }
+}
 #luncher {
   color: #41484b;
   font-size: 9rem;
@@ -278,6 +313,11 @@ button:hover {
 @media (max-width: 500px) {
   #luncher {
     font-size: 1.6rem;
+  }
+}
+@media (max-width: 800px) {
+  #luncher {
+    font-size: 3rem;
   }
 }
 footer {
@@ -317,6 +357,11 @@ footer {
     display: none;
   }
 }
+@media (max-width: 800px) {
+  #footernav a {
+    display: none;
+  }
+}
 #footernav a:hover {
   color: #74B9FF;
 }
@@ -333,7 +378,20 @@ footer {
     white-space: nowrap;
   }
 }
+@media (max-width: 800px) {
+  .footertext {
+    display: inline-block;
+    text-align: center;
+    margin-left: 100%;
+    white-space: nowrap;
+  }
+}
 @media (max-width: 500px) {
+  #phrase {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
   #phrase {
     display: none;
   }
@@ -349,6 +407,11 @@ footer {
     margin-left: 7%;
   }
 }
+@media (max-width: 800px) {
+  .iconbox {
+    margin-left: 30%;
+  }
+}
 .visionsection {
   background-color: #cfe4f8;
   width: 90%;
@@ -357,6 +420,12 @@ footer {
 @media (max-width: 500px) {
   .visionsection {
     display: none;
+  }
+}
+@media (max-width: 800px) {
+  .visionsection {
+    width: 100%;
+    margin-left: 0%;
   }
 }
 .summary {
@@ -379,6 +448,12 @@ footer {
   margin-left: 19%;
   margin-top: 1.5%;
 }
+@media (max-width: 800px) {
+  .summaryp {
+    width: 80%;
+    margin-right: 20%;
+  }
+}
 .pblock {
   font-size: 2rem;
   width: 40%;
@@ -387,6 +462,12 @@ footer {
 @media (max-width: 500px) {
   .pblock {
     width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .pblock {
+    width: 80%;
+    margin: 0 auto;
   }
 }
 section {
@@ -408,12 +489,28 @@ section {
     align-items: center;
   }
 }
+@media (max-width: 800px) {
+  .contentblock {
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+}
 .textblock {
   margin-top: 6%;
   width: 45%;
 }
 @media (max-width: 500px) {
   .textblock {
+    width: 100%;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+}
+@media (max-width: 800px) {
+  .textblock {
+    text-align: center;
     width: 100%;
     margin-top: 5%;
     margin-left: 5%;
@@ -445,6 +542,11 @@ section {
   margin-left: 27%;
   width: 100%;
 }
+@media (max-width: 800px) {
+  #reverseblock {
+    margin: 0 auto;
+  }
+}
 #reversepblock {
   width: 80%;
   margin-top: 2%;
@@ -460,12 +562,23 @@ section {
   justify-content: space-evenly;
   background-color: #2c4661;
 }
+@media (max-width: 800px) {
+  .CTA2 {
+    flex-direction: column;
+  }
+}
 #cta2img {
   height: 80vh;
 }
 @media (max-width: 500px) {
   #cta2img {
     display: none;
+  }
+}
+@media (max-width: 800px) {
+  #cta2img {
+    width: 100%;
+    height: 50vh;
   }
 }
 .cta2h2 {
@@ -480,6 +593,12 @@ section {
     text-align: center;
   }
 }
+@media (max-width: 800px) {
+  .cta2h2 {
+    width: 100%;
+    text-align: center;
+  }
+}
 .ctatextblock {
   width: 30%;
   display: flex;
@@ -489,6 +608,11 @@ section {
   color: #74B9FF;
 }
 @media (max-width: 500px) {
+  .ctatextblock {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
   .ctatextblock {
     width: 100%;
   }

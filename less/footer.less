@@ -39,6 +39,10 @@ footer{
         @media @phone{
             display: none;
         }
+
+        @media @tablet{
+            display: none;
+        }
     
         &:hover{
             color: @blue;
@@ -58,10 +62,21 @@ footer{
         white-space: nowrap;
     }
 
+    @media @tablet{
+        display: inline-block;
+        text-align: center;
+        margin-left: 100%;
+        white-space: nowrap;
+    }
+
 }
 
 #phrase{
     @media @phone{
+        display: none;
+    }
+
+    @media @tablet{
         display: none;
     }
 }
@@ -74,6 +89,10 @@ footer{
 
     @media @phone{
         margin-left: 7%;
+    }
+
+    @media @tablet{
+        margin-left: 30%;
     }
     
 }
