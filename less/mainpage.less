@@ -9,8 +9,8 @@
     @media @phone {
         display: flex;
         flex-direction: column;
-        max-height: 30% !important;
-        margin-top: 220px;
+        max-width: 90%;
+        margin-top: 20px;
         margin-left: 30px;
     }
 }   
@@ -41,7 +41,7 @@ section{
     border-bottom: 1px solid @gray;
 
     @media @phone {
-        width: 100%;
+        width: 90%;
         flex-direction: column;
         align-items: center;
     }
@@ -65,7 +65,7 @@ section{
 
     @media @phone {
         width: 100%;
-        margin-left: 25%;
+        margin-left: 5%;
     }
 }
 
@@ -73,10 +73,10 @@ section{
     flex-direction: row-reverse;
 
     @media @phone {
-        width: 100%;
+        width: 90%;
         flex-direction: column;
         align-items: center;
-    
+    }
 }
 
 .CTA2{
@@ -86,16 +86,24 @@ section{
     background-color: rgb(44, 70, 97);
 
 }
-.cta2img{
-    width: 50%;
-    margin-top: 3%;
-    margin-left: 2%;
+
+#cta2img{
+    height: 80vh;
+
+    @media @phone{
+        display: none;
+    }
 }
+
 
 .cta2h2{
     font-size: 7rem;
     width: 20%;
     margin: 1%;
+
+    @media @phone{
+        width: 50%;
+    }
 }
 
 .ctatextblock{
@@ -105,9 +113,10 @@ section{
     align-items: center;
     justify-content: space-evenly;
     color: @blue;
-    color: red;
-    
-    
+
+    @media @phone{
+        width: 90%;
+    }
+   
 }
 
-}

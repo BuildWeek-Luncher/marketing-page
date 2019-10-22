@@ -4,6 +4,10 @@ footer{
     padding: 2% 0%;
     display: flex;
     justify-content: space-evenly;
+
+    @media @phone{
+        flex-direction: column;
+    }
     
 }
 
@@ -12,6 +16,8 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+
+    
 }
 
 .footersection3{
@@ -19,6 +25,7 @@ footer{
     font-size: 4rem;
     display: flex;
     justify-content: flex-end;
+
 }
 
 #footernav a{
@@ -28,6 +35,10 @@ footer{
         text-decoration: none;
         color: @orange;
         padding: 20px;
+
+        @media @phone{
+            display: none;
+        }
     
         &:hover{
             color: @blue;
@@ -39,6 +50,20 @@ footer{
     width: 30%;
     padding-left: 1%;
     color: @orange;
+
+    @media @phone{
+        display: inline-block;
+        text-align: center;
+        margin-left: 100%;
+        white-space: nowrap;
+    }
+
+}
+
+#phrase{
+    @media @phone{
+        display: none;
+    }
 }
 
 .iconbox{
@@ -46,4 +71,9 @@ footer{
     justify-content: space-evenly !important;
     width: 100% !important;
     margin-top: .6%;
+
+    @media @phone{
+        margin-left: 7%;
+    }
+    
 }
