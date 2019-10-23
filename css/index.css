@@ -240,7 +240,7 @@ header {
   header {
     display: flex;
     flex-direction: column;
-    width: 121%;
+    width: 100%;
   }
 }
 @media (max-width: 800px) {
@@ -290,6 +290,11 @@ header {
     bottom: 0%;
   }
 }
+@media (max-width: 1680px) {
+  .headlinecta {
+    font-size: 5rem;
+  }
+}
 h1 {
   margin-right: 5%;
   margin-top: -6%;
@@ -306,7 +311,7 @@ h1 {
 }
 @media (max-width: 1366px) {
   h1 {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 }
 button {
@@ -469,14 +474,14 @@ footer {
   width: 100% !important;
   margin-top: 0.6%;
 }
-@media (max-width: 500px) {
-  .iconbox {
-    margin-left: 7%;
-  }
-}
 @media (max-width: 800px) {
   .iconbox {
     margin-left: 30%;
+  }
+}
+@media (max-width: 500px) {
+  .iconbox {
+    margin-left: 0;
   }
 }
 .visionsection {
@@ -499,6 +504,21 @@ footer {
   .visionsection {
     width: 100%;
     margin-left: 0%;
+  }
+}
+#luncher2 {
+  color: #41484b;
+  font-size: 4rem;
+  font-weight: bold;
+}
+@media (max-width: 500px) {
+  #luncher2 {
+    font-size: 2rem !important;
+  }
+}
+@media (max-width: 800px) {
+  #luncher2 {
+    font-size: 3rem;
   }
 }
 .summary {
