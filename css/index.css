@@ -1,3 +1,25 @@
+.button-style {
+  width: 30%;
+  height: 70px;
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  background-color: #74B9FF;
+  border-radius: 8%;
+  font-weight: bold;
+  margin-top: 2%;
+}
+.button-style:hover {
+  color: #FFAD72;
+}
+.column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fullwidth-center {
+  width: 100%;
+  text-align: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -258,7 +280,7 @@ header {
   }
 }
 .headlinecta {
-  font-size: 7rem;
+  font-size: 6rem;
   position: absolute;
   width: 30%;
   color: #636E72;
@@ -524,10 +546,10 @@ footer {
 .summary {
   display: flex;
   flex-direction: column;
+  align-items: center;
   font-size: 4rem;
   width: 100%;
   justify-content: center;
-  align-items: center;
   margin-top: 3%;
 }
 #vision {
@@ -586,6 +608,7 @@ section {
 @media (max-width: 500px) {
   .contentblock {
     width: 100%;
+    display: flex;
     flex-direction: column;
     align-items: center;
     margin-right: 3%;
@@ -612,16 +635,16 @@ section {
 }
 @media (max-width: 800px) {
   .textblock {
-    text-align: center;
     width: 100%;
+    text-align: center;
     margin-top: 5%;
     margin-left: 5%;
   }
 }
 @media (max-width: 1366px) {
   .textblock {
-    text-align: center;
     width: 100%;
+    text-align: center;
     margin-top: 5%;
     margin-left: 5%;
   }
@@ -643,6 +666,7 @@ section {
 @media (max-width: 500px) {
   #contentreverse {
     width: 90%;
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
@@ -665,8 +689,8 @@ section {
 }
 @media (max-width: 1366px) {
   #reverseblock {
-    text-align: center;
     width: 100%;
+    text-align: center;
     margin-top: 5%;
     margin-left: 5%;
   }

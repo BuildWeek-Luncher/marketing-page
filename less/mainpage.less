@@ -34,12 +34,10 @@
     }
    
 .summary{
-    display: flex;
-    flex-direction: column;
+    .column-center();
     font-size: 4rem;
     width: 100%;
     justify-content: center;
-    align-items: center;
     margin-top: 3%;
 }  
 
@@ -85,9 +83,7 @@
 
 section{
     font-size: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    .column-center();
     margin-top: 2%;
     
     
@@ -101,8 +97,7 @@ section{
 
     @media @phone {
         width: 100%;
-        flex-direction: column;
-        align-items: center;
+        .column-center();
         margin-right: 3%;
     }
 
@@ -125,15 +120,13 @@ section{
     }
 
     @media @tablet {
-        text-align: center;
-        width: 100%;
+        .fullwidth-center();
         margin-top: 5%;
         margin-left: 5%;
     }
 
     @media @smaller {
-        text-align: center;
-        width: 100%;
+        .fullwidth-center();
         margin-top: 5%;
         margin-left: 5%;
     }
@@ -156,8 +149,7 @@ section{
 
     @media @phone {
         width: 90%;
-        flex-direction: column;
-        align-items: center;
+        .column-center();
         
     }
 
@@ -178,8 +170,7 @@ section{
     }
 
     @media @smaller {
-        text-align: center;
-        width: 100%;
+        .fullwidth-center();
         margin-top: 5%;
         margin-left: 5%;
     }
@@ -229,13 +220,11 @@ section{
     border-bottom: 2px solid @gray;
 
     @media @phone{
-        width: 100%;
-        text-align: center;
+        .fullwidth-center();
     }
 
     @media @tablet{
-        width: 100%;
-        text-align: center;
+        .fullwidth-center();
     }
 }
 
