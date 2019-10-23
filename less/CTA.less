@@ -20,24 +20,24 @@ header{
     @media @phone {
         display: flex;
         flex-direction: column;
-        width: 121%;
+        width: 100%;
     }
 
     @media @tablet {
         display: flex;
         flex-direction: column;
-        width: 121%;
+        width: 100%;
     }
 
     @media @smaller{
         display: flex;
         flex-direction: column;
-        width: 121%;
+        width: 100%;
 }
 }
 
 .headlinecta{
-    font-size: 7rem;
+    font-size: 6rem;
     position: absolute;
     width: 30%;
     color: @gray;
@@ -67,6 +67,9 @@ header{
         bottom: 0%;
 
 }
+    @media @medium{
+        font-size: 5rem;
+    }
 }
 
 h1{
@@ -78,27 +81,17 @@ h1{
     }
 
     @media @tablet{
-        font-size: 3rem;
+        font-size: 1.4rem !important;
     }
 
     @media @smaller{
-        font-size: 4rem;
+        font-size: 5rem;
     }
-}
+
+} 
 
 button{
-    width: 30%;
-    height: 70px;
-    font-size: 2rem;
-    font-family: 'Roboto', sans-serif;
-    background-color: @blue;
-    border-radius: 8%;
-    font-weight: bold;
-    margin-top: 2%;
-
-    &:hover{
-        color: @orange;
-      }
+    .button-style();
 
     @media @phone {
         width: 90%;
@@ -126,6 +119,10 @@ button{
 }
     @media @tablet{
         font-size: 3rem;
+    }
+
+    @media @medium{
+        font-size: 5rem;
     }
 
 }

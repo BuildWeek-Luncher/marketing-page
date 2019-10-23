@@ -3,7 +3,9 @@ footer{
     opacity: .7;
     padding: 2% 0%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 
     @media @phone{
         flex-direction: column;
@@ -12,11 +14,15 @@ footer{
     @media @smaller{
         padding: 0;
     }
+
+    @media @medium{
+        height: 40vh;
+    }
     
 }
 
 .footersection2{
-    width: 25%;
+    width: 15%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -25,7 +31,7 @@ footer{
 }
 
 .footersection3{
-    width: 55%;
+    width: 25%;
     font-size: 4rem;
     display: flex;
     justify-content: flex-end;
@@ -34,6 +40,12 @@ footer{
         width: 40%;
         font-size: 1.6rem;
         margin-right: 20%;
+    }
+
+    @media @medium{
+        width: 40%;
+        font-size: 1.6rem;
+        margin-right: 10%;
     }
 
 }
@@ -53,12 +65,10 @@ footer{
         @media @tablet{
             display: none;
         }
-        @media @smaller{
-            width: 98%;
-            white-space: nowrap;
-            font-size: 2.3rem;
-            margin-left: -2%;
 
+        @media @medium{
+            font-size: 2rem;
+    
         }
     
         &:hover{
@@ -68,7 +78,7 @@ footer{
     }
 
 .footertext{
-    width: 30%;
+    width: 100%;
     padding-left: 1%;
     color: @orange;
 
@@ -108,6 +118,10 @@ footer{
     @media @smaller{
         display: none;
     }
+
+    @media @medium{
+        display: none;
+    }
 }
 
 .iconbox{
@@ -116,12 +130,14 @@ footer{
     width: 100% !important;
     margin-top: .6%;
 
-    @media @phone{
-        margin-left: 7%;
+    
+    @media @tablet{
+        margin-left: 30% 
     }
 
-    @media @tablet{
-        margin-left: 30%;
+    @media @phone{
+        margin-left: 0;
     }
     
 }
+
