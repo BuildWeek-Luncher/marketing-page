@@ -12,6 +12,10 @@ footer{
     @media @smaller{
         padding: 0;
     }
+
+    @media @medium{
+        height: 40vh;
+    }
     
 }
 
@@ -53,12 +57,9 @@ footer{
         @media @tablet{
             display: none;
         }
-        @media @smaller{
-            width: 98%;
-            white-space: nowrap;
-            font-size: 2.3rem;
-            margin-left: -2%;
 
+        @media @medium{
+            font-size: 2rem;
         }
     
         &:hover{
@@ -106,6 +107,10 @@ footer{
     }
 
     @media @smaller{
+        display: none;
+    }
+
+    @media @medium{
         display: none;
     }
 }

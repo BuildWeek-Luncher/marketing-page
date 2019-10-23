@@ -226,6 +226,11 @@ nav a {
 nav a:hover {
   color: #FFAD72;
 }
+@media (max-width: 1366px) {
+  nav a {
+    font-size: 2rem;
+  }
+}
 .navlogo {
   height: 200px;
   margin-left: 2%;
@@ -380,6 +385,11 @@ button:hover {
     font-size: 3rem;
   }
 }
+@media (max-width: 1680px) {
+  #luncher {
+    font-size: 5rem;
+  }
+}
 footer {
   background-color: #404647;
   opacity: 0.7;
@@ -395,6 +405,11 @@ footer {
 @media (max-width: 1366px) {
   footer {
     padding: 0;
+  }
+}
+@media (max-width: 1680px) {
+  footer {
+    height: 40vh;
   }
 }
 .footersection2 {
@@ -434,12 +449,9 @@ footer {
     display: none;
   }
 }
-@media (max-width: 1366px) {
+@media (max-width: 1680px) {
   #footernav a {
-    width: 98%;
-    white-space: nowrap;
-    font-size: 2.3rem;
-    margin-left: -2%;
+    font-size: 2rem;
   }
 }
 #footernav a:hover {
@@ -486,6 +498,11 @@ footer {
   }
 }
 @media (max-width: 1366px) {
+  #phrase {
+    display: none;
+  }
+}
+@media (max-width: 1680px) {
   #phrase {
     display: none;
   }
