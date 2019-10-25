@@ -250,8 +250,7 @@ nav a:hover {
 }
 @media (max-width: 500px) {
   .ctaimg {
-    width: 83%;
-    margin-left: -18%;
+    width: 100%;
   }
 }
 .trim {
@@ -267,7 +266,9 @@ header {
   header {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 375px !important;
   }
 }
 @media (max-width: 800px) {
@@ -356,9 +357,9 @@ button:hover {
 }
 @media (max-width: 500px) {
   button {
-    width: 90%;
-    font-size: 1.4rem;
-    height: 50px;
+    width: 80%;
+    font-size: 1rem;
+    height: 20px;
     margin-bottom: 3%;
   }
 }
@@ -649,6 +650,9 @@ section {
     margin-left: 5%;
   }
 }
+#summermeals {
+  text-align: center !important;
+}
 #reversepblock {
   width: 80%;
   margin-top: 2%;
@@ -656,6 +660,7 @@ section {
 @media (max-width: 500px) {
   #reversepblock {
     width: 80%;
+    margin-left: 20% !important;
   }
 }
 .CTA2 {
@@ -693,6 +698,7 @@ section {
   .cta2h2 {
     width: 100%;
     text-align: center;
+    font-size: 5rem;
   }
 }
 @media (max-width: 800px) {
